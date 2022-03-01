@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<section>
+    <div class="circle"></div>
+    <header>
+        <a href="#"><img src="/projects/images/code.png" class="logo"></a>
+        <ul>
+            <a href="#">Anasayfa</a> 
+            <a href="#">Hakkımızda</a>
+            <a href="#">Biz Kimiz</a> 
+            <a href="#">İletişim</a> 
+            <a href="login.html">Giriş Yap</a>  
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textBox">
+            <h2>It's not just Apple<br>It's <span>Apple</span></h2>
+            <p>Safari’nin yenilikçi özellikleri internetten daha fazla keyif almanızı sağlıyor. Hem de birçok farklı yöntemle. Yerleşik gizlilik özellikleri bilgilerinizi korumanıza ve Mac’inizi güvende tutmanıza yardımcı oluyor. 
+                Güncellenen başlangıç sayfası, favori sitelerinizi hızla ve kolayca kaydetmenizi, bulmanızı ve paylaşmanızı sağlıyor. 
+                Ve Siri önerileri yer işaretlerinizi, okuma listenizdeki bağlantıları, iCloud Sekmeleri’ni, Mesajlar’da size gönderilen bağlantıları ve daha fazlasını öne çıkarıyor.</p>
+            <a href="#">Satın Almak İçin Tıklayınız</a>
+
+            <div class="social-media">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+    </div>
+    <div class="imgBox">
+        <img src="images/apple11new.png" class="starbucks">
+    </div>
+</div>
+<ul class="thumb">
+    <li><img src="images/apple11new.png" onclick="imgSlider('images/apple11new.png');changeCricleClor('#C62828')"></li>
+    <li><img src="images/apple12.png" onclick="imgSlider('images/12.png');changeCricleClor('#FFECB3')"></li>
+    <li><img src="images/apple13.png" onclick="imgSlider('images/13.png');changeCricleClor('#000000')"></li>
+</ul>
+</section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCricleClor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
+</body>
+</html>
